@@ -30,3 +30,9 @@
 *.exe
 *.out
 *.app
+
+
+*.vs
+ManagedDxlGame/graphics
+ManagedDxlGame/mesh
+ManagedDxlGame/sound
