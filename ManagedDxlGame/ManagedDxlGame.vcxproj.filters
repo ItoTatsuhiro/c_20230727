@@ -143,6 +143,12 @@
     <ClCompile Include="program\library\tnl_instance.cpp">
       <Filter>program\[000] library</Filter>
     </ClCompile>
+    <ClCompile Include="program\game\common\GameManager.cpp">
+      <Filter>program\[003] game\[000] common</Filter>
+    </ClCompile>
+    <ClCompile Include="program\game\common\SceneBase.cpp">
+      <Filter>program\[003] game\[000] common</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ManagedDxlGame.rc">
@@ -244,6 +250,12 @@
     </ClInclude>
     <ClInclude Include="program\library\tnl_instance.h">
       <Filter>program\[000] library</Filter>
+    </ClInclude>
+    <ClInclude Include="program\game\common\GameManager.h">
+      <Filter>program\[003] game\[000] common</Filter>
+    </ClInclude>
+    <ClInclude Include="program\game\common\SceneBase.h">
+      <Filter>program\[003] game\[000] common</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
