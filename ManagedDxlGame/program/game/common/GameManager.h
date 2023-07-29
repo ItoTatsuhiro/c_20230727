@@ -1,5 +1,5 @@
 #pragma once
-#include "SceneBase.h"
+#include "../base/SceneBase.h"
 
 class GameManager {
 public :
@@ -8,11 +8,9 @@ public :
 	static GameManager* GetInstance(SceneBase* start_scene = nullptr);
 
 	void update(float delta_time);
-	void draw() {};
 
 	// ƒV[ƒ“Ø‚è‘Ö‚¦—pŠÖ”
 	void changeScene(SceneBase* next_scene);
-
 
 private :
 

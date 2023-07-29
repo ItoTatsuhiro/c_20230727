@@ -24,11 +24,14 @@
     <Filter Include="program\[003] game\[000] common">
       <UniqueIdentifier>{33052a13-f5b1-4055-907b-5fa5edc90ed2}</UniqueIdentifier>
     </Filter>
-    <Filter Include="program\[003] game\[001] scene">
+    <Filter Include="program\[003] game\[002] scene">
       <UniqueIdentifier>{6119a695-02c2-4abb-8002-4cbb02d0da7c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="program\[003] game\[002] object">
+    <Filter Include="program\[003] game\[003] object">
       <UniqueIdentifier>{5ec1c3cd-c056-4c84-a858-340933dabb2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="program\[003] game\[001] base">
+      <UniqueIdentifier>{43b61577-2627-4b28-82f5-f6b647c47da5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -146,8 +149,20 @@
     <ClCompile Include="program\game\common\GameManager.cpp">
       <Filter>program\[003] game\[000] common</Filter>
     </ClCompile>
-    <ClCompile Include="program\game\common\SceneBase.cpp">
-      <Filter>program\[003] game\[000] common</Filter>
+    <ClCompile Include="program\game\scene\scene_Title.cpp">
+      <Filter>program\[003] game\[002] scene</Filter>
+    </ClCompile>
+    <ClCompile Include="program\game\scene\scene_Play.cpp">
+      <Filter>program\[003] game\[002] scene</Filter>
+    </ClCompile>
+    <ClCompile Include="program\game\object\Player.cpp">
+      <Filter>program\[003] game\[003] object</Filter>
+    </ClCompile>
+    <ClCompile Include="program\game\base\SceneBase.cpp">
+      <Filter>program\[003] game\[001] base</Filter>
+    </ClCompile>
+    <ClCompile Include="program\game\base\CharacterBase.cpp">
+      <Filter>program\[003] game\[001] base</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -254,8 +269,20 @@
     <ClInclude Include="program\game\common\GameManager.h">
       <Filter>program\[003] game\[000] common</Filter>
     </ClInclude>
-    <ClInclude Include="program\game\common\SceneBase.h">
-      <Filter>program\[003] game\[000] common</Filter>
+    <ClInclude Include="program\game\scene\scene_Title.h">
+      <Filter>program\[003] game\[002] scene</Filter>
+    </ClInclude>
+    <ClInclude Include="program\game\scene\scene_Play.h">
+      <Filter>program\[003] game\[002] scene</Filter>
+    </ClInclude>
+    <ClInclude Include="program\game\object\Player.h">
+      <Filter>program\[003] game\[003] object</Filter>
+    </ClInclude>
+    <ClInclude Include="program\game\base\SceneBase.h">
+      <Filter>program\[003] game\[001] base</Filter>
+    </ClInclude>
+    <ClInclude Include="program\game\base\CharacterBase.h">
+      <Filter>program\[003] game\[001] base</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

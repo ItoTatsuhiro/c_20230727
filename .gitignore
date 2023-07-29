@@ -33,6 +33,8 @@
 
 
 *.vs
+*x64
+ManagedDxlGame/x64
 ManagedDxlGame/graphics
 ManagedDxlGame/mesh
 ManagedDxlGame/sound

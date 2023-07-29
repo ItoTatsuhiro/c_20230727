@@ -8,7 +8,7 @@ GameManager::GameManager(SceneBase* start_scene) : now_scene_(start_scene) {
 
 
 GameManager* GameManager::GetInstance(SceneBase* start_scene) {
-	if (instance_) {
+	if (!instance_) {
 		instance_ = new GameManager(start_scene);
 	}
 	return instance_;

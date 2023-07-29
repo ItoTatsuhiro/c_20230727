@@ -2,7 +2,8 @@
 #include <string>
 #include "../dxlib_ext/dxlib_ext.h"
 #include "gm_main.h"
-
+#include "common/GameManager.h"
+#include "scene/scene_Title.h"
 
 
 //------------------------------------------------------------------------------------------------------------
@@ -10,13 +11,16 @@
 void gameStart(){
 	srand(time(0));
 
+	// ゲームマネージャーのインスタンス化
+	GameManager* gmr = GameManager::GetInstance(new SceneTitle());
 
 }
 
 //------------------------------------------------------------------------------------------------------------
 // 毎フレーム実行されます
 void gameMain(float delta_time) {
-	DrawStringEx(570, 300, -1, "hello wolrd");
+
+	GameManager::GetInstance()->update(delta_time);
 
 
 }
