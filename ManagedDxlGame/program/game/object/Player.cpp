@@ -23,7 +23,7 @@ void Player::update(float delta_time) {
 
 void Player::draw() {
 
-	DrawCircle(pos_.x, pos_.y, 10, -1, 0);
+	DrawCircle(pos_.x, pos_.y, player_r, -1, 0);
 
 	DrawStringEx(500, 500, -1, "play_Area_Size_Max.x = %f, y = %f", play_Area_Size_Max.x, play_Area_Size_Max.y);
 	DrawStringEx(500, 550, -1, "play_Area_Size_Min = %f, y = %f", play_Area_Size_Min.x, play_Area_Size_Min.y);
@@ -65,8 +65,8 @@ void Player::move(float delta_time) {
 
 	pos_.y += move_y_value;						// —Ž‰º‚Ìˆ—
 
-	if (pos_.y >= 700) {
-		pos_.y = 700;
+	if (pos_.y >= play_Area_Size_Max.y - player_r) {
+		pos_.y = play_Area_Size_Max.y - player_r;
 	}
 
 	time_fall += delta_time;

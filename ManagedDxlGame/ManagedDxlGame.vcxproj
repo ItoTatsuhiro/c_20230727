@@ -171,6 +171,7 @@
     <ClCompile Include="program\game\common\GameManager.cpp" />
     <ClCompile Include="program\game\gm_main.cpp" />
     <ClCompile Include="program\game\object\Player.cpp" />
+    <ClCompile Include="program\game\object\Stage.cpp" />
     <ClCompile Include="program\game\scene\scene_Play.cpp" />
     <ClCompile Include="program\game\scene\scene_Title.cpp" />
     <ClCompile Include="program\library\json11.cpp" />
@@ -207,6 +208,7 @@
     <ClInclude Include="program\game\common\GameManager.h" />
     <ClInclude Include="program\game\gm_main.h" />
     <ClInclude Include="program\game\object\Player.h" />
+    <ClInclude Include="program\game\object\Stage.h" />
     <ClInclude Include="program\game\scene\scene_Play.h" />
     <ClInclude Include="program\game\scene\scene_Title.h" />
     <ClInclude Include="program\library\json11.hpp" />
