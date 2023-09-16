@@ -33,6 +33,9 @@
     <Filter Include="program\[003] game\[001] base">
       <UniqueIdentifier>{43b61577-2627-4b28-82f5-f6b647c47da5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="program\[003] game\[004]mapchip">
+      <UniqueIdentifier>{84aff0fd-9cdd-4403-89a3-6dceec2f079e}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="ManagedDxlGame.cpp">
@@ -167,6 +170,15 @@
     <ClCompile Include="program\game\object\Stage.cpp">
       <Filter>program\[003] game\[003] object</Filter>
     </ClCompile>
+    <ClCompile Include="program\game\common\GraphicManager.cpp">
+      <Filter>program\[003] game\[000] common</Filter>
+    </ClCompile>
+    <ClCompile Include="program\game\base\MapChipBase.cpp">
+      <Filter>program\[003] game\[001] base</Filter>
+    </ClCompile>
+    <ClCompile Include="program\game\mapchip\Block.cpp">
+      <Filter>program\[003] game\[004]mapchip</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="ManagedDxlGame.rc">
@@ -289,6 +301,15 @@
     </ClInclude>
     <ClInclude Include="program\game\object\Stage.h">
       <Filter>program\[003] game\[003] object</Filter>
+    </ClInclude>
+    <ClInclude Include="program\game\common\GraphicManager.h">
+      <Filter>program\[003] game\[000] common</Filter>
+    </ClInclude>
+    <ClInclude Include="program\game\base\MapChipBase.h">
+      <Filter>program\[003] game\[001] base</Filter>
+    </ClInclude>
+    <ClInclude Include="program\game\mapchip\Block.h">
+      <Filter>program\[003] game\[004]mapchip</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

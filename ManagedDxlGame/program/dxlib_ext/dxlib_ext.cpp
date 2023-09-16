@@ -8,12 +8,25 @@ std::string g_drag_file_path;
 
 
 void DrawStringEx(const float x, const float y, const int color, const char* _str, ...) {
-	char buff[255] = { 0 };
+	char buff[1024] = { 0 };
 	va_list argptr;
 	va_start(argptr, _str);
 	vsprintf_s(buff, _str, argptr);
 	va_end(argptr);
-	DrawStringF(x, y, buff, color);
+
+	float py = y;
+	std::string str = buff;
+	int font_size = GetFontSize();
+	while (1) {
+		auto pos = str.find_first_of("\n");
+		if (pos == std::string::basic_string::npos) {
+			DrawStringF(x, py, str.c_str(), color);
+			break;
+		}
+		DrawStringF(x, py, str.substr(0, pos).c_str(), color);
+		py += font_size;
+		str = str.substr(pos+1, str.length()-1);
+	}
 }
 void DrawStringToHandleEx(const float x, const float y, const int color, const int hdl, const char* _str, ...) {
 	char buff[255] = { 0 };

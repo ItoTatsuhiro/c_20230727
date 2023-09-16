@@ -1,8 +1,14 @@
 #include "GameManager.h"
 
+
 GameManager* GameManager::instance_ = nullptr;
 
 GameManager::GameManager(SceneBase* start_scene) : now_scene_(start_scene) {
+
+	GraphicManager::GetInstance();
+
+
+	GameManager::Load_CsvAddress();
 
 }
 
@@ -24,4 +30,11 @@ void GameManager::changeScene(SceneBase* next_scene) {
 	delete now_scene_;
 	now_scene_ = nullptr;
 	now_scene_ = next_scene_;
+}
+
+void GameManager::Load_CsvAddress() {
+
+	csvAddress = tnl::LoadCsv<std::string>("csv/CsvAddress.csv");
+
+
 }

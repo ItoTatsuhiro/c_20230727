@@ -167,9 +167,12 @@
     <ClCompile Include="program\dxlib_ext\dxlib_ext_texture.cpp" />
     <ClCompile Include="program\dxlib_ext\OBJLoader.cpp" />
     <ClCompile Include="program\game\base\CharacterBase.cpp" />
+    <ClCompile Include="program\game\base\MapChipBase.cpp" />
     <ClCompile Include="program\game\base\SceneBase.cpp" />
     <ClCompile Include="program\game\common\GameManager.cpp" />
+    <ClCompile Include="program\game\common\GraphicManager.cpp" />
     <ClCompile Include="program\game\gm_main.cpp" />
+    <ClCompile Include="program\game\mapchip\Block.cpp" />
     <ClCompile Include="program\game\object\Player.cpp" />
     <ClCompile Include="program\game\object\Stage.cpp" />
     <ClCompile Include="program\game\scene\scene_Play.cpp" />
@@ -204,9 +207,12 @@
     <ClInclude Include="program\dxlib_ext\dxlib_ext_texture.h" />
     <ClInclude Include="program\dxlib_ext\OBJLoader.h" />
     <ClInclude Include="program\game\base\CharacterBase.h" />
+    <ClInclude Include="program\game\base\MapChipBase.h" />
     <ClInclude Include="program\game\base\SceneBase.h" />
     <ClInclude Include="program\game\common\GameManager.h" />
+    <ClInclude Include="program\game\common\GraphicManager.h" />
     <ClInclude Include="program\game\gm_main.h" />
+    <ClInclude Include="program\game\mapchip\Block.h" />
     <ClInclude Include="program\game\object\Player.h" />
     <ClInclude Include="program\game\object\Stage.h" />
     <ClInclude Include="program\game\scene\scene_Play.h" />

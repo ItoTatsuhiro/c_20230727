@@ -1,7 +1,10 @@
 #pragma once
 #include "../../dxlib_ext/dxlib_ext.h"
+#include "../common/GraphicManager.h"
 #include "../base/SceneBase.h"
 #include "../object/Player.h"
+#include "../object/Stage.h"
+
 
 class ScenePlay : public SceneBase {
 public :
@@ -23,9 +26,14 @@ private :
 	// プレイヤーを生成する用のポインタ変数
 	Player* player_ = nullptr;
 
+	// 
+	Stage* stage_ = nullptr;
+
 	// プレイヤー等のオブジェクトを表示させる際の表示範囲
 	const tnl::Vector3 PLAY_AREA_SIZE_MAX = { 1000, 720, 0 };		// プレイヤー等のオブジェクトを表示させる際の最大位置
 	const tnl::Vector3 PLAY_AREA_SIZE_MIN = { 0, 0, 0 };			// プレイヤー等のオブジェクトを表示させる際の最小位置
 
+	// 当たり判定用
+	void hitCheck();
 
 };
