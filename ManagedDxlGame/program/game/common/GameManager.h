@@ -2,15 +2,20 @@
 #include <vector>
 #include <string>
 #include "../../dxlib_ext/dxlib_ext.h"
+#include <vector>
 #include "GraphicManager.h"
+#include "AnimManager.h"
+#include "ScoreManager.h"
+#include "SoundManager.h"
 #include "../base/SceneBase.h"
+
 
 
 class GameManager {
 public :
 
 	static GameManager* instance_;
-	static GameManager* GetInstance(SceneBase* start_scene = nullptr);
+	static GameManager* GetInstance_(SceneBase* start_scene = nullptr);
 
 	void update(float delta_time);
 
@@ -26,6 +31,7 @@ public :
 	enum class CSV_NAME {	
 		GRAPH_ADDRESS,		// 画像の保存先のアドレス用
 		CHARACTER_BASE,		// キャラクターベース用
+		PLAYER_DATA,		// プレイヤーに関する値を入れる用
 		STAGE_DATA,			// ステージに関する値を入れる用
 		CSV_MAX				// CSVファイルの数
 

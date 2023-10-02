@@ -5,5 +5,9 @@ Block::Block(const tnl::Vector3& pos, MAPCHIP chipType) : MapChipBase( pos, chip
 
 	chipType_ = chipType;
 	collision_ = true;
+	has_damage_ = false;
+}
+
+void Block::onCollision_() {
 
 }

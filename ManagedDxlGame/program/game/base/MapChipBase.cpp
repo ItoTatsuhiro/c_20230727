@@ -17,3 +17,25 @@ bool& MapChipBase::getCollision() {
 tnl::Vector3& MapChipBase::getPos_() {
 	return pos_;
 }
+
+void MapChipBase::setPos_(const tnl::Vector3& newPos) {
+	
+	pos_ = newPos;
+
+}
+
+// ダメージの有無を取得する関数
+const bool& MapChipBase::get_has_damage_() {
+	return has_damage_;
+}
+
+// ダメージの値を取得する関数
+const float& MapChipBase::get_damageVal_() {
+	return damageVal_;
+}
+
+
+// チップの種類を取得する関数
+MAPCHIP MapChipBase::get_chipType_() {
+	return chipType_;
+}

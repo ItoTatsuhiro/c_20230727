@@ -12,7 +12,7 @@ void gameStart(){
 	srand(time(0));
 
 	// ゲームマネージャーのインスタンス化
-	GameManager* gmr = GameManager::GetInstance(new SceneTitle());
+	GameManager* gmr = GameManager::GetInstance_(new SceneTitle());
 
 }
 
@@ -20,7 +20,7 @@ void gameStart(){
 // 毎フレーム実行されます
 void gameMain(float delta_time) {
 
-	GameManager::GetInstance()->update(delta_time);
+	GameManager::GetInstance_()->update(delta_time);
 
 
 }

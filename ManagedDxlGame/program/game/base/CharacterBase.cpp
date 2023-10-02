@@ -16,3 +16,5 @@ void CharacterBase::set_moveValue_(const tnl::Vector3& newMoveVal) {
 void CharacterBase::reset_timeFall_() {
 	timeFall_ = 0;
 }
+
+

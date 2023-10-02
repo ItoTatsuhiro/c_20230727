@@ -5,7 +5,7 @@ class CharacterBase {
 public :
 
 	virtual void update(float delta_time) = 0;
-	virtual void draw() = 0;
+	virtual void draw(float delta_time) = 0;
 
 	// キャラクターの座標
 	tnl::Vector3 pos_ = { 0, 0, 0 };
@@ -34,16 +34,16 @@ protected :
 	virtual void move(float delta_time) = 0;
 
 	// キャラクターの画面上での移動速度
-	float move_speed = 10;
+	float moveSpeed_ = 10;
 
 	// 移動量
 	tnl::Vector3 moveValue_ = {};
 
 	// ジャンプ力
-	float jump_power = 10;
+	float jumpPower_ = 10;
 
 	// キャラクターにかかる重力(下向きに移動する力)
-	const float gravity = 9.8f;
+	float gravity_ = 9.8f;
 
 	// 落下している時間
 	float timeFall_ = 0;

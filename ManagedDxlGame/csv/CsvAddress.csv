@@ -1,3 +1,4 @@
 csv\game\[000]common\GraphAddress.csv,使用する画像の保存先のアドレス用
 csv\game\[001]base\CharacterBase.csv,キャラクターベースのデータ用
+csv\game\[003]object\PlayerData.csv,プレイヤーのデータ用
 csv\game\[003]object\StageData.csv,ステージのデータ用

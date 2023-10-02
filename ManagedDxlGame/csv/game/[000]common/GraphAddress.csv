@@ -1,2 +1,5 @@
 0,なし,
 1,地面,graphics/mygame/earth.png
+2,針,graphics/mygame/spike.png
+,ハート,graphics/mygame/heart.png
+,背景画像：草原,graphics/free/grass.png
